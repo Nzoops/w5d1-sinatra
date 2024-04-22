@@ -1,10 +1,10 @@
 <html>
   <body>
-    <p>PAGE POTIN
-    Voici la page du potin n°X
-    Son auteur : ==author==
-    Le contenu du potin : ==content==
-    
-    Lien pour revenir à la page des potins </p>
+    <p>PAGE POTIN</p>
+    <p>Voici la page du potin n° <%= @gossip %></p> 
+    <p>Son auteur : <%= @gossip.author %></p>
+    <p>Son message : <%= @gossip.content %></p>
+
+    <a href="/">Back to index</a>
   </body>
 </html>
